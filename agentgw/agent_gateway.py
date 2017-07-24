@@ -169,7 +169,8 @@ def start_bidder(name):
             cwd=exec_base_path,        
             shell=True, 
             close_fds=True,
-            stdout=log_file)
+            stdout=log_file,
+            stderr=log_file)
     except :
         result['resultCode'] = 3
         result['resultDescription'] = 'error executing agent'
