@@ -373,7 +373,7 @@ class application:
             run the development bottle server
         '''
         logger.warning('starting up server')    
-        run(self.app, host=GATEWAY_IP, port=GATEWAY_PORT, reloader=False)
+        run(self.app, host=GATEWAY_IP, port=GATEWAY_PORT, reloader=False, server='paste')
 
     
 
