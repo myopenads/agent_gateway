@@ -180,7 +180,7 @@ def start_bidder(name):
     # read the pid, the one that proc returns belongs to the shell
     pid = None
     # give it some time to make sure the pid is there
-    time.sleep(1)
+    time.sleep(2)
     with open(log_path, 'r') as f:
         for line in f:
             m = re.match('pid:(?P<pid>\d+)', line)
